@@ -269,3 +269,30 @@ body {
     height: 20px;
     flex-shrink: 0;
 }
+
+/* Responsivo */
+@media (max-width: 768px) {
+    .shape {
+        filter: blur(50px);
+    }
+
+    .shape-1 {
+        width: 300px;
+        height: 300px;
+    }
+
+    .shape-2 {
+        width: 220px;
+        height: 220px;
+    }
+
+    .shape-3 {
+        width: 180px;
+        height: 180px;
+    }
+
+    .shape-4 {
+        width: 150px;
+        height: 150px;
+    }
+}
