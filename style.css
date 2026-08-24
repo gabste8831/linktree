@@ -18,6 +18,8 @@ body {
     font-family: 'Inter', sans-serif;
     background: var(--bg-gradient);
     min-height: 100vh;
+    /* dvh acompanha as barras do navegador no mobile e evita o scroll residual */
+    min-height: 100dvh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -294,5 +296,61 @@ body {
     .shape-4 {
         width: 150px;
         height: 150px;
+    }
+}
+
+/* Telas baixas (celular deitado, tablet landscape): compacta para caber sem scroll */
+@media (max-height: 700px) {
+    body {
+        padding: 1.5rem 1rem;
+    }
+
+    .container {
+        gap: 1.75rem;
+    }
+
+    .profile-pic {
+        width: 80px;
+        height: 80px;
+    }
+
+    .header .logo {
+        width: 130px;
+    }
+
+    .links {
+        gap: 0.75rem;
+    }
+
+    .link-card {
+        padding: 0.75rem 1.25rem;
+    }
+}
+
+@media (max-height: 560px) {
+    body {
+        padding: 1rem;
+    }
+
+    .container {
+        gap: 1rem;
+    }
+
+    .profile-pic {
+        width: 60px;
+        height: 60px;
+    }
+
+    .header .logo {
+        width: 110px;
+    }
+
+    .links {
+        gap: 0.5rem;
+    }
+
+    .link-card {
+        padding: 0.6rem 1rem;
+        font-size: 0.9rem;
     }
 }
